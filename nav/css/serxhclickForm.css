@@ -1,0 +1,12 @@
+form{
+    display: grid;
+    width: 200px;
+    height: auto;
+    margin: 20px auto;
+}
+.input , .submit{
+    margin-top: 20px;
+}
+.results{
+ 
+}

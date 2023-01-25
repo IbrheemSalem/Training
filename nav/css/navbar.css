@@ -1,0 +1,68 @@
+body{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  background-color:rgba(2, 2, 2, 0.675);
+  color: aliceblue;
+  z-index: 2;
+}
+nav p{
+  font-family: "Dancing Script" !important;
+  font-size: 30px;
+  padding: 10px;
+  margin: 0;
+}
+nav ul{
+  display: flex;
+  padding-right: 50px;
+}
+.humberger{
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 30px;
+}
+nav li{
+  list-style-type: none;
+  padding: 0 10px 0 10px;
+}
+nav li a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+nav li a:hover {
+  background-color: rgba(2, 2, 2, 0.675);
+}
+@media screen and (max-width: 761px) {
+  .humberger{
+    display: block;
+  }
+  nav ul{
+    width: 100%;
+    position: fixed;
+    flex-direction: column;
+    margin-top: 0;
+    top: -100%;
+    transition: all 1s ease-in-out;
+    background-color:rgba(2, 2, 2, 0.675);
+  }
+  nav ul li a:hover{
+    background-color: transparent;
+  }
+  nav ul li:hover{
+    background-color:rgba(2, 2, 2, 0.675);
+  }
+  .active{
+    top: 0px;
+  }
+  nav ul li{
+    padding: 20px;
+  }
+}
